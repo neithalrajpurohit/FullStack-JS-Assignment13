@@ -1,0 +1,258 @@
+/*
+    @Importing font: Montserrat
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap');
+
+
+/* basic styling reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #ffff;
+    --primary: #1aa7baf8;
+    --grey: #242B2E;
+}
+
+.body {
+    background-image: url("./assets/bg.svg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    margin-top: -43rem;
+    margin-left: 4rem;
+}
+
+.nav-list {
+    float: right;
+    margin-top: -3rem;
+    margin-right: 12rem;
+}
+
+.nav-list-item {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 3rem;
+}
+
+.nav-list button {
+    margin-left: 2rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 10px 14px;
+}
+
+.nav-list :nth-child(1) {
+    color: aqua;
+}
+
+.line {
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+    height: 1px;
+    width: 50px;
+    background-color: rgb(165, 21, 21);
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width:1060px) {
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger-con {
+        float: right;
+        margin-top: -2.5rem;
+        margin-right: 5rem;
+    }
+
+    .hamburger-con i {
+        color: #ead8db;
+        font-size: 23px;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .hero-wrapper h1 {
+        font-size: 39px !important;
+        line-height: 3rem !important;
+    }
+
+    .hero-img img {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:930px) {
+    .body-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/* <!---------------hero----------------> */
+.hero-container {
+    margin-top: 8rem;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+.hero-wrapper h1,
+p {
+    color: var(--white);
+}
+
+.hero-wrapper h1 {
+    font-size: 49px;
+    line-height: 4rem;
+}
+
+.hero-img {
+    margin-top: -28rem;
+    float: right;
+    margin-right: 3rem;
+}
+
+.hero-wrapper p {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:1160px) {
+    .hero-img {
+        opacity: .3;
+    }
+}
+
+/* <!-------------------------Operating section------------------------> */
+
+.body-container {
+    margin-top: 18rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-wrapper {
+    margin-top: 5rem;
+}
+
+.body-content {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.body-content p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--grey);
+}
+
+.img2 {
+    margin-top: -1.5rem;
+    margin-left: -2rem;
+}
+
+/* <!---------------------------Footer------------------------------------> */
+footer {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.footer-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-sec {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5rem;
+    margin-left: 12rem;
+}
+
+.footer-sec p {
+    color: var(--grey);
+}
+
+.circle {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    background-color: #ead8db;
+}
+
+.code:nth-child(3) .circle {
+    background-color: #2498983d !important;
+}
+
+.code:nth-child(4) .circle {
+    background-color: rgba(194, 141, 227, 0.239) !important;
+
+}
+
+.code {
+    height: 315px;
+    width: 250px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 3px 0px 2px rgba(145, 158, 164, 0.348);
+}
+
+.code h2 {
+    text-align: center;
+}
+
+.code p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.circle :nth-child(2) {
+    background-color: #ead8db;
+
+}
+
+.color {
+    height: 100px;
+    width: 100%;
+    color: var(--white);
+    border-radius: 2rem;
+    background-color: #6F00ED;
+}
+
+.color p {
+    color: var(--white);
+
+}
